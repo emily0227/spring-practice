@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc.xsd    http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd    http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd    http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!-- Bean 생성 -->
+<!-- IOC 컨테이너에 저장되는 Bean 들을 관리함 -->
+
+<!-- <bean id="bookController" class="com.spring.test.controller.BookController"> -->
+<!-- <property name="bookService" ref="bookService"></property> -->
+<!-- set"BookService" 메소드를 (파라미터로 bookService를 찾음)찾아서 실행시킨다. -->
+<!-- id="bookService" 인 애를 찾아서 주입해준다.  -->
+<!-- </bean> -->
+
+<!-- <bean id="bookService" class="com.spring.test.service.BookService"> -->
+
+<!-- </bean> -->
+
+<!-- base-package="com.spring.test" 하위에 있는 애들은 스캔한다. -->
+<context:component-scan base-package="com.spring.test"/>
+
+
+</beans>
